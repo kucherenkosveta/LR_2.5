@@ -7,7 +7,5 @@ if __name__ == '__main__':
 
     for item in range(len(A)-2, 1, -1):
         if A[item-1] < A[item] and A[item] > A[item+1]:
-            i = A[item]
-            print(i)
+            print(A[:item - 1])
             break
-    print(A[:item-1])
